@@ -64,10 +64,10 @@ def main():
                              tx_bytes,
                              allstats[interface])
             out += format(interface, rx_bytes, rx_thruput, tx_bytes, tx_thruput)
-            if sys.stdout.isatty():
-                print "\033[H\033[J" + out
-            with open(os.sep.join([APP_DIR, 'thruput.txt']), 'w+') as f:
-                f.write(out)
+        if sys.stdout.isatty():
+            print "\033[H\033[J" + out
+        with open(os.sep.join([APP_DIR, 'thruput.txt']), 'w+') as f:
+            f.write(out)
         time.sleep(1)
 
 def calc_thruput(rx_bytes, tx_bytes, stats):
