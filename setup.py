@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '1.0'
+DIRNAME = os.path.dirname(os.path.abspath(__file__))
+version = '1.0.2'
 
 setup(name='ifstat',
       version=version,
-      description="Shows simple network interface thruput statistics.",
-      long_description="""\
-""",
+      description="Display simple throughput statistics for network interface controllers. Requires Linux kernel >= 2.6",
+      long_description=open(os.sep.join([DIRNAME, 'README.rst'])).read(),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='',
       author='Michael Jenny',
