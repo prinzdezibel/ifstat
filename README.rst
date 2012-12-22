@@ -25,6 +25,8 @@ Method 1: Packaged installation
 
 ::
 
+    $ # make sure easy_install it there (debian): 
+    $ sudo apt-get install python-setuptools
     $ sudo easy_install ifstat  
 
 Method 2: Source installation
