@@ -3,7 +3,7 @@ import sys, os
 
 version = '1.0'
 
-setup(name='p2_ifstat',
+setup(name='ifstat',
       version=version,
       description="Shows simple network interface thruput statistics.",
       long_description="""\
@@ -21,6 +21,6 @@ setup(name='p2_ifstat',
           # -*- Extra requirements: -*-
       ],
       entry_points={
-        'console_scripts': ['ifstat = p2_ifstat.main:main']  
+        'console_scripts': ['ifstat = ifstat.main:main']  
       },
       )
