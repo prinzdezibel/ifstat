@@ -9,7 +9,7 @@ setup(name='ifstat',
       description="Display simple throughput statistics for network interface controllers. Requires Linux kernel >= 2.6",
       long_description=open(os.sep.join([DIRNAME, 'README.rst'])).read(),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
-      keywords='',
+      keywords='bandwidth, throughput, network, monitoring, traffic',
       author='Michael Jenny',
       author_email='michael.jenny@projekt-und-partner.de',
       url='',
